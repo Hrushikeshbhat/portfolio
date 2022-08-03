@@ -61,12 +61,12 @@
     </style>
 
     <!-- Vendor CSS Files -->
-    <link href="/static/ThirdParty/aos/aos.css" rel="stylesheet">
-    <link href="/static/ThirdParty/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/ThirdParty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="/static/ThirdParty/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="/static/ThirdParty/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/static/ThirdParty/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/static/ThirdParty/aos/aos.css" rel="stylesheet"  type="text/css">
+    <link href="/static/ThirdParty/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/ThirdParty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" type="text/css">
+    <link href="/static/ThirdParty/boxicons/css/boxicons.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/ThirdParty/glightbox/css/glightbox.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/ThirdParty/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -152,8 +152,6 @@
         function moveCamera() {
             const t = document.body.getBoundingClientRect().top;
             camera.position.z = t * -0.05;
-
-            console.log(camera.position);
         }
 
         document.body.onscroll = moveCamera;
